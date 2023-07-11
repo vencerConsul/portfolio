@@ -44,7 +44,7 @@ export default {
       formData.append('email', this.email);
       formData.append('message', this.message);
 
-      axios.post('http://localhost:9000/api/sendEmail', formData)
+      axios.post('https://vencer-olermo.vercel.app/api/sendEmail', formData)
         .then(response => {
           if(response.data == 'OK'){
             this.fullname = '';
