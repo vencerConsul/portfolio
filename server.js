@@ -13,7 +13,7 @@ const port = 9000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use(bodyParser.json());
 const corsOpts = {
@@ -25,7 +25,7 @@ const corsOpts = {
 app.use(cors(corsOpts));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public'));
+  res.sendFile(path.join(__dirname, 'dist'));
 });
 
 app.post('/api/sendEmail', (req, res) => {
