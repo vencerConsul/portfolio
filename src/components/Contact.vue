@@ -44,16 +44,13 @@ export default {
       formData.append('email', this.email);
       formData.append('message', this.message);
 
-      axios.post('https://vencer-olermo.vercel.app:9000/api/sendEmail', formData)
+      axios.post('/api/sendEmail', formData)
         .then(response => {
           if(response.data == 'OK'){
             this.fullname = '';
             this.email = '';
             this.message = '';
             this.response = true;
-            setTimeout(function(){
-              this.response = false;
-            }, 1000)
           }
         })
         .catch(error => {
