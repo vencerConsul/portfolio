@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  --body: #eaeaea;
+  --primary: #FB4B4B;
+  --secondary: #F2F1F1;
+  --tertiary: #252936;
+  --white: #ffffff;
+  --gray: #696A6D;
+  --font-family: 'Montserrat', sans-serif;
+  --gutter-x: clamp(0.5rem, 0.5rem + 0.2083vw, 0.75rem);
+  --shadow: 2px 4px 4px rgba(0, 0, 0, 0.21);
+  --img-shadow: 0px 7px 35px -9px rgba(160, 160, 160, 0.363);
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: white;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background: var(--body);
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+html,
+body {
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+  color: var(--tertiary);
+  transition: .3s ease-in-out;
+}
+
+a:not(.btn):hover {
+  text-shadow: var(--shadow);
+  color: var(--tertiary);
+}
+
+/* COMPONENTS */
+section {
+  max-width: 1307px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
+  transition: 0.3s;
+}
+
+.btn {
+  border-radius: 5px;
+  max-width: 186px;
+  width: 100%;
+  min-height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.round {
+  border-radius: 50%;
+  height: 47px;
+  width: 47px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+h2.s-title {
+  font-size: clamp(1.875rem, 1.875rem + 0.5208vw, 2.5rem);
+  font-weight: 800;
+  color: var(--tertiary);
+  text-shadow: var(--shadow);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+h2.s-title::after {
+  content: '';
+  height: 37px;
+  width: 73px;
+  position: absolute;
+  background: url('/icons/subtitle-after.png') no-repeat;
+  top: 0;
+  right: -80px;
+}
+
+p.s-sub-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 50px;
+}
+
+h2.s-title.before-enter {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.3s ease-out;
+}
+
+h2.s-title.enter {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+p.s-sub-title.before-enter {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.6s ease-out;
+}
+
+p.s-sub-title.enter {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@media screen and (max-width: 1403px) {
+  section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h2.s-title::after {
+    content: unset;
+  }
+}
+
+/* flexbox */
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
