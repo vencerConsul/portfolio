@@ -47,8 +47,8 @@ export default {
                     thumbnail: '/timesheet.png',
                     title: 'Time-sheet',
                     paragraph: 'Is a Laravel web app that track the employee time in and time out (Break) in real time using websocket, I made this project to my previous company.',
-                    buttonText: 'View Screenshot',
-                    buttonUrl: 'https://youtube.com',
+                    buttonText: 'Unavailble',
+                    buttonUrl: 'https://github.com/vencerConsul/management',
                     technologiesImg: ['/icons/laravel.png', '/icons/javascript.png', '/icons/mysql.png', '/icons/php.png']
                 },
                 {
