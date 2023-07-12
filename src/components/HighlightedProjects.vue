@@ -54,7 +54,7 @@ export default {
                 {
                     thumbnail: '/wordpress-plugins.png',
                     title: 'WordPress Plugins',
-                    paragraph: 'I have implemented several plugins that I created for a single WordPress website. I have provided a screenshot to demonstrate how to use the plugins. Feel free to visit the website.',
+                    paragraph: 'I implemented several plugins that I created to a single WordPress website. I have provided a screenshot on how to use the plugins. Feel free to visit the website.',
                     buttonText: 'Take a look',
                     buttonUrl: 'https://dev-vencer-web-developer.pantheonsite.io/',
                     technologiesImg: ['/icons/wordpress.png', '/icons/javascript.png', '/icons/mysql.png', '/icons/php.png']
