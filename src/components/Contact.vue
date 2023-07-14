@@ -27,6 +27,7 @@
 </template>
 <script>
 import sendEmailApi from '../services/Api.js';
+import axios from 'axios'
 
 export default {
   data() {
@@ -46,7 +47,7 @@ export default {
         email: this.email,
         message: this.message
       };
-      
+
       axios.post('https://vencer-olermo.vercel.app/api/sendEmail', formData)
         .then(response => {
           console.log('Response Headers:', response.headers);
