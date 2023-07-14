@@ -26,7 +26,7 @@
   </section>
 </template>
 <script>
-import sendEmailApi from '../services/Api.js';
+// import sendEmailApi from '../services/Api.js';
 import axios from 'axios'
 
 export default {
@@ -36,7 +36,7 @@ export default {
       email: '',
       message: '',
       response: false,
-      sendmail: sendEmailApi
+      // sendmail: sendEmailApi
     };
   },
   methods: {
