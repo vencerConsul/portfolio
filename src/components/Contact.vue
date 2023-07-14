@@ -39,13 +39,22 @@ export default {
   },
   methods: {
     sendEmail() {
-      sendEmail('John Doe', 'johndoe@example.com', 'Hello, this is a test message')
+      
+      const formData = {
+        fullname: this.fullname,
+        email: this.email,
+        message: this.message
+      };
+
+      sendEmail(formData.fullname, formData.email, formData.message)
         .then(response => {
           console.log(response);
         })
         .catch(error => {
           console.log(error);
         });
+
+        
       // const formData = {
       //   fullname: this.fullname,
       //   email: this.email,
