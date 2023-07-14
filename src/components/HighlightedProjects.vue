@@ -65,8 +65,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-/* animation */
-
 #projects .hp-wrapper {
     position: relative;
     margin-top: 80px;

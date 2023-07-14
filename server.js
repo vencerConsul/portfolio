@@ -1,7 +1,4 @@
 import express from 'express';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
 import smtpTransport from 'nodemailer-smtp-transport';
@@ -9,11 +6,6 @@ import cors from 'cors';
 
 const app = express();
 const port = 9000;
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use(bodyParser.json());
 const corsOpts = {
@@ -23,10 +15,6 @@ const corsOpts = {
 };
 
 app.use(cors(corsOpts));
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist'));
-});
 
 app.post('/api/sendEmail', (req, res) => {
   const { fullname, email, message } = req.body;

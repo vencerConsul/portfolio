@@ -26,9 +26,9 @@
   </section>
 </template>
 <script>
-import axios from 'axios';
+import Api from '../services/Api.js';
+
 export default {
-  name: 'Contact',
   data() {
     return {
       fullname: '',
@@ -39,14 +39,15 @@ export default {
   },
   methods: {
     sendEmail() {
-      const formData = new FormData();
-      formData.append('fullname', this.fullname);
-      formData.append('email', this.email);
-      formData.append('message', this.message);
+      const formData = {
+        fullname: this.fullname,
+        email: this.email,
+        message: this.message
+      };
 
-      axios.post('/api/sendEmail', formData)
+      Api().post('/api/sendEmail', formData)
         .then(response => {
-          if(response.data == 'OK'){
+          if (response.data === 'OK') {
             this.fullname = '';
             this.email = '';
             this.message = '';
@@ -57,8 +58,8 @@ export default {
           console.log(error);
         });
     }
-  },
-}
+  }
+};
 </script>
 <style lang="scss" scoped>
 #contact {
