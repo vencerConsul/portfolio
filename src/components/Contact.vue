@@ -35,7 +35,7 @@ export default {
       email: '',
       message: '',
       response: false,
-      // sendmail: sendEmailApi
+      sendmail: sendEmailApi
     };
   },
   methods: {
@@ -47,7 +47,7 @@ export default {
         message: this.message
       };
 
-      this.sendEmailApi(formData.fullname, formData.email, formData.message)
+      this.sendmail(formData.fullname, formData.email, formData.message)
         .then(response => {
           console.log(response);
         })
