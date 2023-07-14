@@ -40,16 +40,25 @@ export default {
   },
   methods: {
     sendEmail() {
-      
+
       const formData = {
         fullname: this.fullname,
         email: this.email,
         message: this.message
       };
-
-      this.sendmail(formData.fullname, formData.email, formData.message)
+      
+      axios.post('https://vencer-olermo.vercel.app/api/sendEmail', formData)
         .then(response => {
+          console.log('Response Headers:', response.headers);
+          console.log('Response Data:', response.data);
           console.log(response);
+
+          if (response.data === 'OK') {
+            this.fullname = '';
+            this.email = '';
+            this.message = '';
+            this.response = true;
+          }
         })
         .catch(error => {
           console.log(error);
