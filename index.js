@@ -5,7 +5,7 @@ import smtpTransport from 'nodemailer-smtp-transport';
 import cors from 'cors';
 
 const app = express();
-const port = 9061;
+// const port = 9061;
 
 app.use(bodyParser.json());
 
@@ -47,6 +47,13 @@ app.post('/api/sendEmail', (req, res) => {
   });
 });
 
+// app.listen(port, () => {
+//   console.log(`Server started on port ${port}`);
+// });
+
+
+const port = process.env.PORT || 9000;
+
 app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
+  alert(`Server started on port ${port}`);
 });
