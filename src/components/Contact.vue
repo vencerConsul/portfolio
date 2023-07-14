@@ -47,7 +47,7 @@ export default {
         message: this.message
       };
 
-      sendEmailApi(formData.fullname, formData.email, formData.message)
+      this.sendEmailApi(formData.fullname, formData.email, formData.message)
         .then(response => {
           console.log(response);
         })
