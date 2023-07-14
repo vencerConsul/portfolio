@@ -17,6 +17,8 @@ const corsOpts = {
 
 app.use(cors(corsOpts));
 
+app.use('api/sendEmail')app.use('api/sendEmail')
+
 app.post('/api/sendEmail', (req, res) => {
   const { fullname, email, message } = req.body;
 
@@ -46,10 +48,6 @@ app.post('/api/sendEmail', (req, res) => {
     }
   });
 });
-
-app.get('/api/sendEmail', (req, res) => {
-  console.log(req)
-})
 
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
