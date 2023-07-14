@@ -45,13 +45,13 @@ export default {
         message: this.message
       };
 
-      Api().post('/api/sendEmail', formData)
+      Api().get('/api/sendEmail', formData)
         .then(response => {
 
           console.log('Response Headers:', response.headers);
           console.log('Response Data:', response.data);
-
           console.log(response)
+
           if (response.data === 'OK') {
             this.fullname = '';
             this.email = '';
