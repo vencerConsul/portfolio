@@ -26,7 +26,7 @@
   </section>
 </template>
 <script>
-import Api from '../services/Api.js';
+import sendEmailApi from '../services/Api.js';
 
 export default {
   data() {
@@ -46,7 +46,7 @@ export default {
         message: this.message
       };
 
-      sendEmail(formData.fullname, formData.email, formData.message)
+      sendEmailApi(formData.fullname, formData.email, formData.message)
         .then(response => {
           console.log(response);
         })
@@ -54,7 +54,7 @@ export default {
           console.log(error);
         });
 
-        
+
       // const formData = {
       //   fullname: this.fullname,
       //   email: this.email,

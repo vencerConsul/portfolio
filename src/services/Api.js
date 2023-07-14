@@ -8,7 +8,7 @@
 
 import axios from 'axios';
 
-export async function sendEmail(fullname, email, message) {
+export async function sendEmailApi(fullname, email, message) {
   const formData = {
     fullname,
     email,
