@@ -48,7 +48,7 @@ export default {
         message: this.message
       };
 
-      axios.post(process.env.API_URL, formData)
+      axios.post('https://vencer-olermo.vercel.app/api/sendEmail', formData)
         .then(response => {
           
           console.log(response);
