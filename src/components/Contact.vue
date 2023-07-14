@@ -47,7 +47,7 @@ export default {
 
       Api().post('/api/sendEmail', formData)
         .then(response => {
-          alert('test')
+          console.log(response)
           if (response.data === 'OK') {
             this.fullname = '';
             this.email = '';
