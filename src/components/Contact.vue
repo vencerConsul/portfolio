@@ -26,7 +26,7 @@
   </section>
 </template>
 <script>
-// import Api from '../services/Api.js';
+import Api from '../services/Api.js';
 import axios from 'axios'
 
 export default {
@@ -36,7 +36,6 @@ export default {
       email: '',
       message: '',
       response: false,
-      // sendmail: sendEmailApi
     };
   },
   methods: {
@@ -48,10 +47,12 @@ export default {
         message: this.message
       };
 
-      axios.post('https://vencer-olermo.vercel.app/api/sendEmail', formData)
+      Api().post('/api/sendEmail', formData)
         .then(response => {
-          
-          console.log(response);
+
+          console.log('Response Headers:', response.headers);
+          console.log('Response Data:', response.data);
+          console.log(response)
 
           if (response.data === 'OK') {
             this.fullname = '';
@@ -63,31 +64,6 @@ export default {
         .catch(error => {
           console.log(error);
         });
-
-
-      // const formData = {
-      //   fullname: this.fullname,
-      //   email: this.email,
-      //   message: this.message
-      // };
-
-      // Api().post('/api/sendEmail', formData)
-      //   .then(response => {
-
-      //     console.log('Response Headers:', response.headers);
-      //     console.log('Response Data:', response.data);
-      //     console.log(response)
-
-      //     if (response.data === 'OK') {
-      //       this.fullname = '';
-      //       this.email = '';
-      //       this.message = '';
-      //       this.response = true;
-      //     }
-      //   })
-      //   .catch(error => {
-      //     console.log(error);
-      //   });
     }
   }
 };

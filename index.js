@@ -17,7 +17,7 @@ const corsOpts = {
 
 app.use(cors(corsOpts));
 
-app.use('api/sendEmail')app.use('api/sendEmail')
+app.use('api/sendEmail')
 
 app.post('/api/sendEmail', (req, res) => {
   const { fullname, email, message } = req.body;
