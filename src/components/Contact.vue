@@ -26,7 +26,7 @@
   </section>
 </template>
 <script>
-import Api from '../services/Api.js';
+import sendEmailApi from '../services/Api.js';
 
 export default {
   data() {
@@ -35,7 +35,7 @@ export default {
       email: '',
       message: '',
       response: false,
-      sendmail: Api
+      sendmail: sendEmailApi
     };
   },
   methods: {
