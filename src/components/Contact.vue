@@ -39,29 +39,36 @@ export default {
   },
   methods: {
     sendEmail() {
-      const formData = {
-        fullname: this.fullname,
-        email: this.email,
-        message: this.message
-      };
-
-      Api().get('/api/sendEmail', formData)
+      sendEmail('John Doe', 'johndoe@example.com', 'Hello, this is a test message')
         .then(response => {
-
-          console.log('Response Headers:', response.headers);
-          console.log('Response Data:', response.data);
-          console.log(response)
-
-          if (response.data === 'OK') {
-            this.fullname = '';
-            this.email = '';
-            this.message = '';
-            this.response = true;
-          }
+          console.log(response);
         })
         .catch(error => {
           console.log(error);
         });
+      // const formData = {
+      //   fullname: this.fullname,
+      //   email: this.email,
+      //   message: this.message
+      // };
+
+      // Api().post('/api/sendEmail', formData)
+      //   .then(response => {
+
+      //     console.log('Response Headers:', response.headers);
+      //     console.log('Response Data:', response.data);
+      //     console.log(response)
+
+      //     if (response.data === 'OK') {
+      //       this.fullname = '';
+      //       this.email = '';
+      //       this.message = '';
+      //       this.response = true;
+      //     }
+      //   })
+      //   .catch(error => {
+      //     console.log(error);
+      //   });
     }
   }
 };
