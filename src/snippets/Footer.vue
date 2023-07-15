@@ -12,7 +12,8 @@
             </a>
         </div>
         <div class="row">
-            © 2023 Vencer Olermo - Full-stack Web Developer
+            <p style="margin-bottom: 10px;">© 2023 Vencer Olermo - Full-stack Web Developer</p>
+            <a href="https://www.buymeacoffee.com/olermovenzC" target="_blank">Buy me a Coffee</a>
         </div>
     </footer>
 </template>
