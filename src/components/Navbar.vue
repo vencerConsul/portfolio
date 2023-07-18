@@ -137,10 +137,7 @@ export default {
         .flex {
             justify-content: center !important;
             margin-top: 20px !important;
-
-            // .navbar-brand {
-            //     display: none !important;
-            // }
+            row-gap: 20px;
         }
     }
 }
