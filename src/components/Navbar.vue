@@ -138,9 +138,9 @@ export default {
             justify-content: center !important;
             margin-top: 20px !important;
 
-            .navbar-brand {
-                display: none !important;
-            }
+            // .navbar-brand {
+            //     display: none !important;
+            // }
         }
     }
 }
