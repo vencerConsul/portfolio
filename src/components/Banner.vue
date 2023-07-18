@@ -191,8 +191,8 @@ export default {
 
 @media screen and (max-width: 1403px) {
     #banner {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 

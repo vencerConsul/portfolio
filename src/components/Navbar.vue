@@ -131,4 +131,17 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 665px) {
+    #navbar {
+        .flex {
+            justify-content: center !important;
+            margin-top: 20px !important;
+
+            .navbar-brand {
+                display: none !important;
+            }
+        }
+    }
+}
 </style>
