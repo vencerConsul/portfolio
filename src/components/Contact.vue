@@ -73,8 +73,11 @@ export default {
   .c-wrapper {
     max-width: 1141px;
     width: 100%;
-    background: #fbfbfb;
-    border: 1px solid #D9D9D9;
+    box-shadow: 0 8px 32px 0 rgba(184, 184, 184, 0.425);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 55px 113px;
     text-align: center;
     border-radius: 5px;

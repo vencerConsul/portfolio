@@ -72,6 +72,7 @@ export default {
         opacity: 1;
         transform: translateY(0px);
     }
+
     .sp-box.before-enter:nth-child(2) {
         opacity: 0;
         transform: translateY(100px);
@@ -82,6 +83,7 @@ export default {
         opacity: 1;
         transform: translateY(0px);
     }
+
     .sp-box.before-enter:nth-child(3) {
         opacity: 0;
         transform: translateY(100px);
@@ -92,6 +94,7 @@ export default {
         opacity: 1;
         transform: translateY(0px);
     }
+
     .sp-wrapper {
         max-width: 1141px;
         width: 100%;
@@ -101,8 +104,10 @@ export default {
         .sp-box {
             max-width: 364px;
             width: 100%;
-            background: #fbfbfb;
-            border: 1px solid #D9D9D9;
+            box-shadow: 0 8px 32px 0 rgba(184, 184, 184, 0.425);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
             border-radius: 5px;
             padding: 32px 40px;
 
@@ -159,5 +164,4 @@ export default {
     #shocase_projects .sp-wrapper .sp-box {
         max-width: 100%;
     }
-}
-</style>
+}</style>
