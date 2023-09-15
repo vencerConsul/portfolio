@@ -93,7 +93,7 @@ export default {
     .hp-box {
         max-width: 1141px;
         width: 100%;
-        background: #F1F1F1;
+        background: #fbfbfb;
         border: 1px solid #D9D9D9;
         border-radius: 5px;
         padding: 37px 38px;

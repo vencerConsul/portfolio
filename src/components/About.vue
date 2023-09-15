@@ -12,7 +12,7 @@
             <span>adventure</span>
             <span>gaming</span>
         </div>
-        <a href="/vencer-olermo.pdf" download class="btn">Download CV</a>
+        <a href="/vencer.pdf" download class="btn">Download CV</a>
     </section>
 </template>
 <script>

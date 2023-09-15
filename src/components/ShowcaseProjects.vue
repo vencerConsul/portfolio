@@ -101,7 +101,7 @@ export default {
         .sp-box {
             max-width: 364px;
             width: 100%;
-            background: #F1F1F1;
+            background: #fbfbfb;
             border: 1px solid #D9D9D9;
             border-radius: 5px;
             padding: 32px 40px;

@@ -1,6 +1,5 @@
 <template>
   <Header />
-  <router-view></router-view>
   <About />
   <HighlightedProjects />
   <ShowcaseProjects />

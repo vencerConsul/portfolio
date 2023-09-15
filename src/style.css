@@ -124,7 +124,7 @@ section {
 
 body {
   line-height: 1;
-  background: var(--body);
+  background: var(--white);
   max-width: 1920px;
   margin: 0 auto;
   width: 100%;

@@ -73,7 +73,7 @@ export default {
   .c-wrapper {
     max-width: 1141px;
     width: 100%;
-    background: #F1F1F1;
+    background: #fbfbfb;
     border: 1px solid #D9D9D9;
     padding: 55px 113px;
     text-align: center;
@@ -110,11 +110,11 @@ export default {
       textarea {
         background: var(--white);
         padding: 20px 27px;
-        border: 0;
+        border: 1px solid #dfdfdf;
         border-radius: 5px;
 
         &:focus {
-          border: 0;
+          border: 1px solid var(--tertiary);
           outline: 0;
         }
 

@@ -33,7 +33,7 @@ export default {
     .left-animation {
         height: 100%;
         width: 66%;
-        background: var(--secondary);
+        background: #f9f9f9;
         position: absolute;
         top: 0;
         z-index: 1;
@@ -158,7 +158,7 @@ export default {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: 1px solid #bdbdbd;
+    border: 1px solid #c4c4c4;
     position: absolute;
     opacity: 0;
     top: 40%;
