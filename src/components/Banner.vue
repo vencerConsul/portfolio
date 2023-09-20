@@ -7,7 +7,7 @@
                     <h1 v-scrollanimation>Full-stack web</h1>
                     <h2 v-scrollanimation>DEVELOPER</h2>
                     <div class="buttons" v-scrollanimation>
-                        <a href="#contact" class="btn" v-scrollanimation>Hire me</a>
+                        <a href="#contact" class="btn" v-scrollanimation>Let's Talk</a>
                         <div class="social-icons" v-scrollanimation>
                             <a target="_blank" href="https://github.com/vencerConsul">
                                 <img src="/icons/github.png" class="round">

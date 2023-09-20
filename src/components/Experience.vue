@@ -24,8 +24,8 @@ export default {
                 {
                     company: 'Technodream Web Design',
                     position: 'Web Developer',
-                    paragraph: 'Developing static and dynamic websites, including WordPress development. Creating WordPress plugins based on clients specific requirements. I work more on backend, custom post types, custom template, Integrating APIs and managing large projects such as E-commerce, Booking and Real Estate websites.',
-                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'VELO (WIX),', 'AJAX,', 'WORDPRESS,', 'ADOBE FIREWORKS', 'FIGMA', 'MYSQL'],
+                    paragraph: 'Developing static and dynamic websites, including WordPress development. Creating WordPress plugins based on clients specific requirements. I work more on backend, custom post types, custom template, Integrating APIs, GoHighLevel, Zapier Integration and managing large projects such as E-commerce and Booking.',
+                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'VELO (WIX),', 'AJAX,', 'WORDPRESS,', 'DIVI,','Elementor/Pro,','WPBakery,','Gutenberg,', 'ADOBE FIREWORKS', 'FIGMA', 'MYSQL'],
                 },
                 {
                     company: 'Freelance',
