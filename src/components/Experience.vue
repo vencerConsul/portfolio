@@ -25,13 +25,13 @@ export default {
                     company: 'Technodream Web Design',
                     position: 'Web Developer',
                     paragraph: 'Developing static and dynamic websites, including WordPress development. Creating WordPress plugins based on clients specific requirements. I work more on backend, custom post types, custom template, Integrating APIs, GoHighLevel, Zapier Integration and managing large projects such as E-commerce and Booking.',
-                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'VELO (WIX),', 'AJAX,', 'WORDPRESS,', 'DIVI,','Elementor/Pro,','WPBakery,','Gutenberg,', 'ADOBE FIREWORKS', 'FIGMA', 'MYSQL'],
+                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'VUEJS,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'VELO (WIX),', 'AJAX,', 'WORDPRESS,', 'DIVI,','Elementor/Pro,','WPBakery,','Gutenberg,', 'ADOBE FIREWORKS', 'FIGMA', 'MYSQL'],
                 },
                 {
                     company: 'Freelance',
                     position: 'Full-stack Web Developer',
                     paragraph: 'I develop websites for various clients using Laravel and WordPress, and deploy them to production environments such as Digital Ocean (via SSH), Heroku, Railway, and shared hosting. Additionally, I have experience using AWS S3 for storage.',
-                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'VELO (WIX),', 'AJAX,', 'AXIOS,', 'FETCH API,', 'LARAVEL,', 'CODEIGNITER,', 'VUE.JS,', 'WORDPRESS,', 'FIGMA,', 'CLOUD HOSTING,', 'GIT'],
+                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'VUEJS,', 'ANGULAR,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'VELO (WIX),', 'AJAX,', 'AXIOS,', 'FETCH API,', 'LARAVEL,', 'CODEIGNITER,', 'VUE.JS,', 'WORDPRESS,', 'FIGMA,', 'CLOUD HOSTING,', 'GIT', 'GITFLOW'],
                 },
             ]
         };
