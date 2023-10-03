@@ -126,6 +126,7 @@ export default {
         .content {
             text-align: left;
             margin-top: auto;
+            padding: 10px;
 
             .hp-title {
                 font-size: 30px;
@@ -178,8 +179,10 @@ export default {
         padding: 0;
 
         .hp-screenshot-box {
-            width: 100%;
+            width: 95%;
             box-shadow: none;
+            margin-top: -20px;
+
         }
 
         .hp-screenshot {
