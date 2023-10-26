@@ -12,7 +12,8 @@
             </a>
         </div>
         <div class="row">
-            <p style="margin-bottom: 10px;">© 2023 Vencer Olermo - Full-stack Web Developer</p>
+            <p style="margin-bottom: 10px;">© 2023 Full-stack Web Developer</p>
+            <small>Created with <img src="/vuejs.png"> by Vencer Olermo</small>
         </div>
     </footer>
 </template>
@@ -23,7 +24,6 @@
     font-family: clamp(0.875rem, 0.875rem + 0.2083vw, 1.125rem);
     font-weight: 500;
     margin: 50px 50px;
-
 }
 .footer-icons {
     display: flex;
@@ -37,5 +37,14 @@
     width: 47px;
     border-radius: 50%;
     background: var(--tertiary);
+}
+.row small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.row small img{
+    width: 30px;
 }
 </style>
