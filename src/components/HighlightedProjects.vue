@@ -52,6 +52,14 @@ export default {
                     technologiesImg: ['/icons/laravel.png', '/icons/javascript.png', '/icons/mysql.png', '/icons/php.png']
                 },
                 {
+                    thumbnail: '/tes.png',
+                    title: 'Teacher Evaluation',
+                    paragraph: 'I created a website for a local client. The website features include adding students, HR, teachers, evaluating teachers based on students\' subjects and courses, security questions, one-time passwords, and advanced encryption security.',
+                    buttonText: 'Take a look',
+                    buttonUrl: 'https://teacher-evaluation-system-production.up.railway.app/',
+                    technologiesImg: ['/icons/laravel.png', '/icons/javascript.png', '/icons/mysql.png', '/icons/php.png']
+                },
+                {
                     thumbnail: '/wordpress-plugins.png',
                     title: 'WordPress Plugins',
                     paragraph: 'I implemented several plugins that I created to a single WordPress website. I have provided a screenshot on how to use the plugins. Feel free to visit the website.',
