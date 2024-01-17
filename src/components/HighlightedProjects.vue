@@ -187,10 +187,11 @@ export default {
         padding: 0;
 
         .hp-screenshot-box {
-            width: 95%;
+            width: 90%;
             box-shadow: none;
-            margin-top: -20px;
-
+            margin-top: -20px !important;
+    text-align: center;
+    margin: 0 auto;
         }
 
         .hp-screenshot {
@@ -199,18 +200,19 @@ export default {
         }
 
         .content {
-            width: 55%;
+            width: 100%;
+            text-align: center;
 
             .hp-actions {
-                align-items: start;
+                align-items: center;
                 flex-direction: column-reverse;
                 row-gap: 20px;
             }
 
             .hp-technologies {
                 padding: unset;
-                align-items: start;
-                justify-content: unset;
+                align-items: center;
+                justify-content: center;
                 column-gap: 40px;
             }
         }
@@ -218,11 +220,6 @@ export default {
 
 }
 
-@media screen and (max-width: 1024px) {
-    #projects .hp-wrapper .hp-box .content {
-        width: 60%;
-    }
-}
 
 @media screen and (max-width: 768px) {
     #projects .hp-wrapper .hp-box .content {

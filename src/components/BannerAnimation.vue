@@ -178,4 +178,16 @@ export default {
     }
 }
 
+@media screen and (max-width: 1024px){
+    .bg-animation .left-animation,
+    .bg-animation .right-animation
+    {
+        width: 50%;
+    }
+    img.arrow-1,
+    img.arrow-2
+    {
+    max-width: 50%;
+}
+}
 </style>
