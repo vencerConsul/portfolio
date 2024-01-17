@@ -184,14 +184,14 @@ export default {
         row-gap: 20px;
         background: none;
         border: 0;
-        padding: 0;
+        padding: 10px 30px;
 
         .hp-screenshot-box {
             width: 90%;
             box-shadow: none;
-            margin-top: -20px !important;
-    text-align: center;
-    margin: 0 auto;
+            margin-top: -50px !important;
+            text-align: center;
+            margin: 0 auto;
         }
 
         .hp-screenshot {
