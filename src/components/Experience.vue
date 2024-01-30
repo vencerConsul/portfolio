@@ -31,7 +31,7 @@ export default {
                     company: 'Creative Outline Ltd.',
                     position: 'Junior Web Developer',
                     paragraph: 'I specialize in developing websites using WordPress, primarily utilizing tools such as PHP, JavaScript, and ACF (Advanced Custom Fields), in conjunction with the HTML5Blank WordPress Boilerplate Theme.',
-                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'AJAX,', 'AXIOS,', 'FETCH API', 'WORDPRESS', 'FIGMA', 'GIT', 'ACF', 'PYTHON'],
+                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'AJAX,', 'AXIOS,', 'FETCH API,', 'WORDPRESS,', 'FIGMA,', 'GIT,', 'ACF,', 'PYTHON'],
                 },
                 {
                     company: 'Freelance',
