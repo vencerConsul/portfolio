@@ -11,7 +11,8 @@
                     <h2 class="hp-title">{{ hproject.title }}</h2>
                     <p>{{ hproject.paragraph }}</p>
                     <div class="hp-actions">
-                        <a target="_blank" :href="hproject.buttonUrl" class="btn">{{ hproject.buttonText }}</a>
+                        <a v-if="hproject.availability" target="_blank" :href="hproject.buttonUrl" class="btn">{{ hproject.buttonText }}</a>
+                        <a v-if="!hproject.availability" disabled class="btn">Unavailable</a>
                         <div class="hp-technologies">
                             <img v-for="techonology in hproject.technologiesImg" :src="techonology" :alt="hproject.title">
                         </div>
@@ -32,6 +33,7 @@ export default {
                     title: 'Web Guru',
                     paragraph: 'Is an international web development and web design service with a dashboard that tracks quote requests, contacts, and reviews.',
                     buttonText: 'Take a look',
+                    availability: false,
                     buttonUrl: 'https://wguru.website/',
                     technologiesImg: ['/icons/laravel.png', '/icons/javascript.png', '/icons/mysql.png', '/icons/php.png']
                 },
@@ -40,6 +42,7 @@ export default {
                     title: 'POS',
                     paragraph: 'A POS system written in Laravel includes features such as import and export functionality, report generation, sales tracking, and item management.',
                     buttonText: 'Take a look',
+                    availability: false,
                     buttonUrl: 'https://pos.up.railway.app/',
                     technologiesImg: ['/icons/laravel.png', '/icons/javascript.png', '/icons/mysql.png', '/icons/php.png']
                 },
@@ -48,6 +51,7 @@ export default {
                     title: 'Time-sheet',
                     paragraph: 'Is a Laravel web app that track the employee time in and time out (Break) in real time using websocket',
                     buttonText: 'Take a look',
+                    availability: false,
                     buttonUrl: 'https://timesheet.up.railway.app/',
                     technologiesImg: ['/icons/laravel.png', '/icons/javascript.png', '/icons/mysql.png', '/icons/php.png']
                 },
@@ -56,6 +60,7 @@ export default {
                     title: 'Teacher Evaluation',
                     paragraph: 'I created a website for a local client. The website features include adding students, HR, teachers, evaluating teachers based on students\' subjects and courses, security questions, one-time passwords, and advanced encryption security.',
                     buttonText: 'Take a look',
+                    availability: false,
                     buttonUrl: 'https://teacher-evaluation-system-production.up.railway.app/',
                     technologiesImg: ['/icons/laravel.png', '/icons/javascript.png', '/icons/mysql.png', '/icons/php.png']
                 },
@@ -64,6 +69,7 @@ export default {
                     title: 'WordPress Plugins',
                     paragraph: 'I implemented several plugins that I created to a single WordPress website. I have provided a screenshot on how to use the plugins. Feel free to visit the website.',
                     buttonText: 'Take a look',
+                    availability: false,
                     buttonUrl: 'https://dev-vencer-web-developer.pantheonsite.io/',
                     technologiesImg: ['/icons/wordpress.png', '/icons/javascript.png', '/icons/mysql.png', '/icons/php.png']
                 },
