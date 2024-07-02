@@ -22,23 +22,30 @@ export default {
         return {
             experiences: [
                 {
+                    company: 'Freelance',
+                    position: 'Full-stack Web Developer',
+                    paragraph: 'I develop websites for various clients using Laravel and WordPress, and deploy them to production environments such as Digital Ocean (via SSH), Heroku, Railway, and shared hosting. Additionally, I have experience using AWS S3 for storage.',
+                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'VUEJS,', 'ANGULAR,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'VELO (WIX),', 'AJAX,', 'AXIOS,', 'LARAVEL,', 'CODEIGNITER,', 'VUE.JS,', 'WORDPRESS,', 'FIGMA,', 'CLOUD HOSTING,', 'GIT', 'GITFLOW'],
+                },
+                {
                     company: 'Technodream Web Design',
                     position: 'Web Developer',
                     paragraph: 'Developing static and dynamic websites, including WordPress development. Creating WordPress plugins based on clients specific requirements. I work more on backend, custom post types, custom template, Integrating APIs, GoHighLevel, Zapier Integration and managing large projects such as E-commerce and Booking.',
                     stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'VUEJS,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'VELO (WIX),', 'AJAX,', 'WORDPRESS,', 'DIVI,','Elementor/Pro,','WPBakery,','Gutenberg,', 'ADOBE FIREWORKS', 'FIGMA', 'MYSQL'],
                 },
                 {
-                    company: 'Creative Outline Ltd.',
-                    position: 'Junior Web Developer',
-                    paragraph: 'I specialize in developing websites using WordPress, primarily utilizing tools such as PHP, JavaScript, and ACF (Advanced Custom Fields), in conjunction with the HTML5Blank WordPress Boilerplate Theme.',
-                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'AJAX,', 'AXIOS,', 'FETCH API,', 'WORDPRESS,', 'FIGMA,', 'GIT,', 'ACF,', 'PYTHON'],
+                    company: 'UBind',
+                    position: 'Product/Web Developer',
+                    paragraph: 'Customize website forms for car insurance, designing and developing the website product. Our goal is to create an intuitive user experience that simplifies the insurance application process.',
+                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'VUEJS,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'AJAX,', 'FIGMA', 'MYSQL'],
                 },
                 {
-                    company: 'Freelance',
-                    position: 'Full-stack Web Developer',
-                    paragraph: 'I develop websites for various clients using Laravel and WordPress, and deploy them to production environments such as Digital Ocean (via SSH), Heroku, Railway, and shared hosting. Additionally, I have experience using AWS S3 for storage.',
-                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'VUEJS,', 'ANGULAR,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'VELO (WIX),', 'AJAX,', 'AXIOS,', 'FETCH API,', 'LARAVEL,', 'CODEIGNITER,', 'VUE.JS,', 'WORDPRESS,', 'FIGMA,', 'CLOUD HOSTING,', 'GIT', 'GITFLOW'],
-                }
+                    company: 'Creative Outline (Current Job)',
+                    position: 'Fullstack Developer',
+                    paragraph: 'I specialize in developing websites using WordPress, primarily utilizing tools such as PHP, JavaScript, and ACF (Advanced Custom Fields), in conjunction with the HTML5Blank WordPress Boilerplate Theme.',
+                    stacks: ['HTML,', 'CSS,', 'JAVASCRIPT,', 'JQUERY,', 'PHP,', 'RESTful API’s,', 'AJAX,', 'AXIOS,', 'WORDPRESS,', 'WORDPRES PLUGIN DEVELOPMENT,', 'FIGMA,', 'GIT,', 'ACF,', 'PYTHON,', 'LARAVEL,', 'API DEVELOPMENT'],
+                },
+                
             ]
         };
     },
