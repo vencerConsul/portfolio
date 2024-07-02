@@ -15,7 +15,7 @@
                             <a target="_blank" href="https://www.linkedin.com/in/vencer-consul-olermo/">
                                 <img src="/icons/linkedin.png" class="round">
                             </a>
-                            <a href="mailto:o.lermovenz@gmail.com">
+                            <a href="mailto:vencer.olermo06@gmail.com">
                                 <img src="/icons/email.png" class="round">
                             </a>
                         </div>
